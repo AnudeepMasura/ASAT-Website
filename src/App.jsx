@@ -117,10 +117,14 @@ function App() {
           </div>
 
           <div className="structure-box asat-box">
-            AS SIMPLE AS THAT [ASAT]
-          </div>
+  AS SIMPLE AS THAT [ASAT]
+</div>
 
-          <div className="structure-line"></div>
+<div className="arrow">
+  ↓
+</div>
+
+<div className="structure-line"></div>
 
           <div className="structure-products">
 

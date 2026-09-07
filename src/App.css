@@ -162,14 +162,19 @@ body {
 }
 
 .structure-line {
+  position: relative;
+
   width: 75%;
-  height: 55px;
+  height: 70px;
 
   border-top: 1px solid #555;
-  border-left: 1px solid #555;
-  border-right: 1px solid #555;
-}
 
+  background:
+    linear-gradient(#555, #555) left top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) 33.33% top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) 66.66% top / 1px 70px no-repeat,
+    linear-gradient(#555, #555) right top / 1px 70px no-repeat;
+}
 .structure-products {
   width: 100%;
 
