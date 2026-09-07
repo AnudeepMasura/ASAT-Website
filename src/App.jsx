@@ -149,7 +149,22 @@ function App() {
         </div>
 
       </section>
+      <footer className="asat-footer">
+  <a
+    href="https://evores-website.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit EvoRES Technology LLP"
+  >
+    <img
+      src="/images/global-icon.png"
+      alt="EvoRES Technology LLP"
+      className="global-footer-icon"
+    />
+  </a>
 
+  <p>© 2026 EvoRES Technology LLP. All Rights Reserved.</p>
+</footer>
     </main>
   );
 }
