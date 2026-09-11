@@ -4,14 +4,18 @@ function App() {
   return (
     <main className="asat-page">
 
-      {/* TITLE */}
+      {/* =========================
+          TITLE
+      ========================= */}
 
       <section className="title-section">
         <h1>AS SIMPLE AS THAT [ASAT]</h1>
       </section>
 
 
-      {/* PRODUCTS */}
+      {/* =========================
+          PRODUCTS
+      ========================= */}
 
       <section className="products-section">
 
@@ -20,6 +24,8 @@ function App() {
         </div>
 
         <div className="products-grid">
+
+          {/* DESIGNER PARADISE */}
 
           <div className="product-card">
             <h2>DESIGNER PARADISE</h2>
@@ -38,6 +44,8 @@ function App() {
             <button>VISIT WEBSITE</button>
           </div>
 
+
+          {/* BRAND HUB */}
 
           <div className="product-card">
             <h2>BRAND HUB</h2>
@@ -58,6 +66,8 @@ function App() {
           </div>
 
 
+          {/* H&S */}
+
           <div className="product-card">
             <h2>H&amp;S</h2>
 
@@ -75,6 +85,8 @@ function App() {
             <button>VISIT WEBSITE</button>
           </div>
 
+
+          {/* FiTX */}
 
           <div className="product-card">
             <h2>FiTX</h2>
@@ -98,7 +110,9 @@ function App() {
       </section>
 
 
-      {/* STRUCTURE */}
+      {/* =========================
+          STRUCTURE
+      ========================= */}
 
       <section className="structure-section">
 
@@ -108,23 +122,40 @@ function App() {
 
         <div className="structure">
 
+          {/* EvoRES */}
+
           <div className="structure-box">
             EVORES TECHNOLOGY
           </div>
+
+
+          {/* Arrow */}
 
           <div className="arrow">
             ↓
           </div>
 
+
+          {/* ASAT */}
+
           <div className="structure-box asat-box">
-  AS SIMPLE AS THAT [ASAT]
-</div>
+            AS SIMPLE AS THAT [ASAT]
+          </div>
 
-<div className="arrow">
-  ↓
-</div>
 
-<div className="structure-line"></div>
+          {/* Arrow under ASAT */}
+
+          <div className="arrow">
+            ↓
+          </div>
+
+
+          {/* Flowchart connection */}
+
+          <div className="structure-line"></div>
+
+
+          {/* Products */}
 
           <div className="structure-products">
 
@@ -149,22 +180,33 @@ function App() {
         </div>
 
       </section>
-      <footer className="asat-footer">
-  <a
-    href="https://evores-website.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Visit EvoRES Technology LLP"
-  >
-    <img
-      src="/images/global-icon.png"
-      alt="EvoRES Technology LLP"
-      className="global-footer-icon"
-    />
-  </a>
 
-  <p>© 2026 EvoRES Technology LLP. All Rights Reserved.</p>
-</footer>
+
+      {/* =========================
+          FOOTER
+      ========================= */}
+
+      <footer className="asat-footer">
+
+        <a
+          href="https://evores-website.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit EvoRES Technology LLP"
+        >
+          <img
+            src="/images/evores-logo.png"
+            alt="EvoRES Technology LLP"
+            className="global-footer-icon"
+          />
+        </a>
+
+        <p>
+          © 2026 EvoRES Technology LLP. All Rights Reserved.
+        </p>
+
+      </footer>
+
     </main>
   );
 }

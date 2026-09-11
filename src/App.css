@@ -122,7 +122,7 @@ body {
 .structure-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px 120px;
+  padding: 0 30px 100px;
 }
 
 .structure {
@@ -146,8 +146,17 @@ body {
   letter-spacing: 3px;
 }
 
+.asat-box {
+  min-width: 285px;
+}
+
+
+/* =========================
+   ARROWS
+========================= */
+
 .arrow {
-  height: 82px;
+  height: 55px;
 
   display: flex;
   align-items: center;
@@ -155,26 +164,32 @@ body {
 
   color: #666;
   font-size: 25px;
+  line-height: 1;
 }
 
-.asat-box {
-  min-width: 285px;
-}
+
+/* =========================
+   FLOWCHART LINE
+========================= */
 
 .structure-line {
-  position: relative;
-
   width: 75%;
-  height: 70px;
+  height: 55px;
 
   border-top: 1px solid #555;
 
   background:
-    linear-gradient(#555, #555) left top / 1px 70px no-repeat,
-    linear-gradient(#555, #555) 33.33% top / 1px 70px no-repeat,
-    linear-gradient(#555, #555) 66.66% top / 1px 70px no-repeat,
-    linear-gradient(#555, #555) right top / 1px 70px no-repeat;
+    linear-gradient(#555, #555) left top / 1px 55px no-repeat,
+    linear-gradient(#555, #555) 33.33% top / 1px 55px no-repeat,
+    linear-gradient(#555, #555) 66.66% top / 1px 55px no-repeat,
+    linear-gradient(#555, #555) right top / 1px 55px no-repeat;
 }
+
+
+/* =========================
+   STRUCTURE PRODUCTS
+========================= */
+
 .structure-products {
   width: 100%;
 
@@ -199,10 +214,51 @@ body {
 
 
 /* =========================
+   FOOTER
+========================= */
+
+.asat-footer {
+  padding: 20px 20px 30px;
+  text-align: center;
+  border: none;
+}
+
+.asat-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  text-decoration: none;
+}
+
+.global-footer-icon {
+  width: 65px !important;
+  height: 65px !important;
+  max-width: 65px !important;
+  max-height: 65px !important;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.asat-footer p {
+  color: #666;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  margin: 8px 0 0;
+}
+
+
+/* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 767px) {
+
+  /* TITLE */
 
   .title-section {
     padding: 45px 20px 55px;
@@ -212,6 +268,9 @@ body {
     font-size: 2.3rem;
     line-height: 1.1;
   }
+
+
+  /* PRODUCTS */
 
   .products-section,
   .structure-section {
@@ -232,65 +291,45 @@ body {
     min-height: 390px;
   }
 
+
+  /* STRUCTURE */
+
   .structure-products {
     grid-template-columns: 1fr 1fr;
   }
 
   .structure-line {
     width: 80%;
+    height: 45px;
+
+    background:
+      linear-gradient(#555, #555) left top / 1px 45px no-repeat,
+      linear-gradient(#555, #555) 33.33% top / 1px 45px no-repeat,
+      linear-gradient(#555, #555) 66.66% top / 1px 45px no-repeat,
+      linear-gradient(#555, #555) right top / 1px 45px no-repeat;
   }
 
   .structure-product {
     font-size: 9px;
     letter-spacing: 2px;
   }
-}
-/* =========================
-   FOOTER
-========================= */
 
-.asat-footer {
-  padding: 30px 20px 35px;
-  text-align: center;
-  border-top: 1px solid #242424;
-}
 
-.evores-footer-logo {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 12px;
-  cursor: pointer;
-}
+  /* FOOTER */
 
-.asat-footer p {
-  color: #666;
-  font-size: 11px;
-  letter-spacing: 1px;
-  margin: 0;
-}/* =========================
-   FOOTER
-========================= */
+  .asat-footer {
+    padding: 18px 15px 25px;
+  }
 
-.asat-footer {
-  padding: 25px 20px 30px;
-  text-align: center;
-  border-top: none;
-}
+  .global-footer-icon {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+  }
 
-.global-footer-icon {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 10px;
-  cursor: pointer;
-}
-
-.asat-footer p {
-  color: #666;
-  font-size: 11px;
-  letter-spacing: 1px;
-  margin: 0;
+  .asat-footer p {
+    font-size: 9px;
+    letter-spacing: 0.6px;
+  }
 }
