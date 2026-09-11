@@ -187,25 +187,20 @@ function App() {
       ========================= */}
 
       <footer className="asat-footer">
+  <p>
+    © 2026 EvoRES Technology LLP. All Rights Reserved.
 
-        <a
-          href="https://evores-website.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit EvoRES Technology LLP"
-        >
-          <img
-            src="/images/evores-logo.png"
-            alt="EvoRES Technology LLP"
-            className="global-footer-icon"
-          />
-        </a>
-
-        <p>
-          © 2026 EvoRES Technology LLP. All Rights Reserved.
-        </p>
-
-      </footer>
+    <a
+      href="https://evores-website.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit EvoRES Technology LLP"
+      className="footer-globe"
+    >
+      🌐
+    </a>
+  </p>
+</footer>
 
     </main>
   );
